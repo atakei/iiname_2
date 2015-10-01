@@ -6,9 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
 <%= yield %>
-
+<br>
+<table>
+  <caption>すきなほうを選んでください</caption>
+  <tr><td><%= image_tag('udon.png', :size => "450x391", :alt => "うどん") %></td>
+  <td><%= image_tag('soba.png', :size => "450x393", :alt => "そば") %></td></tr>
 </body>
 </html>

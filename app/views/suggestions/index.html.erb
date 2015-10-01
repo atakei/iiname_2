@@ -1,0 +1,12 @@
+<h1>iiname</h1>
+
+<ul>
+<% @suggestions.each do |suggestion| %>
+<li>
+  <%= link_to suggestion.title, suggestion_path(suggestion) %>
+  <%= link_to 'Edit', edit_suggestion_path(suggestion) %>
+</li>
+<% end %>
+</ul>
+<%= link_to 'home', suggestions_path %> | <%= link_to 'New', new_suggestion_path %>
+<button class="showAnswer">確認</button>
